@@ -1,0 +1,27 @@
+Comandos Git
+- Salvar a primeira versão de um projeto no Github:
+git init
+git add .
+git commit -m "Mensagem explicativa"
+git branch -M main
+git remote add origin git@github.com:seuusuario/seurepositorio.git
+git push -u origin main
+- Salvar uma nova versão:
+git status
+git add .
+git commit -m "Mensagem explicativa"
+git push
+- Clonar e Modificar um Projeto:
+git clone git@github.com:seuusuario/seurepositorio.git
+git add .
+git commit "Mensagem explicativa"
+git push
+(Para baixar com os códigos de versões é necessário copiar o link do repositório)
+- Entrar em subpastas:
+cd "nomeDaPasta"
+- Abrir o vscode pelo termital do git bash:
+code .
+- Verificando o histórico de versões
+git log
+. Listagem resumida:
+git log --oneline

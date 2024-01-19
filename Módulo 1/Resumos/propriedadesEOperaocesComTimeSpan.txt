@@ -24,7 +24,7 @@ TELA:
 2
 3
 5
-2,128... (fala o total de dias contando com as dias das horas minutos, etc
+2,128... (fala o total de dias contando com as dias das horas minutos, etc)
 51,08... (fala o total de horas contando com as horas dos dias minutos, etc)
 3065,116... (fala o total de minutos contando com os minutos dos dias, horas, etc)
 
