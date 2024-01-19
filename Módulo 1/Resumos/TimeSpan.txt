@@ -1,0 +1,18 @@
+TIMESPAN:
+⁃ Representa uma duração. 
+⁃ É um valor do tipo struct. 
+⁃ Representação interna:
+• Um objeto TimeSpan internamente armazena uma duração na forma de ticks (100 nano segundos). 
+Exemplo:
+TimeSpan t1 = new TimeSpan(0,1,30);
+Console.WriteLine(t1);
+Console.WriteLine(t1.Ticks); 
+Tela:
+00:01:30
+900000000
+⁃ Instanciação: construtores, fields, métodos From, Parse. 
+• TimeSpan t1 = new TimeSpan();
+1. Cria o TimeSpan com a duração zero
+• TimeSpan t2 = new TimeSpan(quantidade de ticksL);
+⁃ Converte ticks para duração 
+• Timespan t3 = new Timespan(hora, minuto, segundo);

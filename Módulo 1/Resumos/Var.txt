@@ -1,0 +1,5 @@
+INFERÊNCIA DE TIPOS: PALAVRA VAR
+var x = 10;
+var y = 10.0;
+var z = “Marie”
+⁃ Com a palavra var não é necessário informar o tipo da variável, ela vai ser definida após você iniciá-la com um valor. 

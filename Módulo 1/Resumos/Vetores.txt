@@ -1,0 +1,5 @@
+VETORES:
+- Nome dado a arranjos unidimensionais.
+- É uma estrutura de dados homogênea(dados de mesmo tipo), ordenada (elementos acessados pelas posições), e alocada de uma vez só, em um bloco contínuo de memória.
+- Vantagens: acesso imediato aos elementos pela sua posição.
+- DESVANTAGENS: Tem tamanho fixo e a dificuldade para se realizar inserções e deleções.

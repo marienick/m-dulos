@@ -1,0 +1,51 @@
+CLASSES SÃO TIPOS REFERÊNCIA:
+-Váriaveis cujo o tipo são classes não devem ser entendidas como caixa mas sim como "tentáculos" (ponteiros) para caixas, ou seja elas não são as caixas do produto ainda elas são a ideia da caixa até os objetos dessa classe serem criados.
+
+VALOR NULL
+-Tipos referência aceitam o valor "null", que indica que a variável aponta pra ninguém.
+STRUCTS SÃO TIPO VALOR
+-A linguagem c# possui também tipos calor, que são os "structs". Structs são caixas e não ponteiros, ou seja eles são os tipos básicos da linguagem.
+EXEMPLO:
+-se você cria 2 variáveis x e y elas vão ser duas caixinhas com lugares diferentes na memória e caso você faça isso:
+x = 10.5;
+y = x;
+você criou uma cópia da variável que vai apontar para um lugar diferente na memória.
+
+CRIANDO STRUCTS
+struct Point{
+	public double x, y;
+	public override string ToString(){
+				return("("+X+","+Y+")";
+	}
+}
+-Quando você cria um struct você precisa iniciar a variável
+EXEMPLO:
+using System;
+struct Point{
+	public double x, y;
+	public override string ToString(){
+				return("("+X+","+Y+")";
+	}
+}
+class Program{
+	static void Main(string [] args){
+	Point p;
+	p.X = 10;
+	p.y = 20;
+	Console.WL(p);
+	p = new Point();
+	Console.WL(p);
+}
+}
+Tela:
+(10,20)
+(0,0)
+
+VALORES PADRÃO
+Quando se cria um desses porém eles não são iniciadas.
+- números : 0;
+- bool: false;
+- char: caractere código 0;
+- objeto: null;
+Quando uma variável apenas declarada, mas não instanciada, inicia em estado "não atribuída", e o próprio compilador não permite que ela seja acessada.
+	

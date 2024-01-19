@@ -1,0 +1,21 @@
+PALAVRA this:
+-Referência para o  próprio objeto.
+-Usos comuns:
+.Diferenciar atributos de variáveis locais(Java).
+*EXEMPLO: 
+this.Nome = Nome;
+.Referenciar outro construtor em um construtor.
+*EXEMPLO:
+public Produto(){
+Quantidade = 0;
+}
+public Produto(string Nome, double Preco): this(){
+this.Nome = Nome;
+this.Preco = Preco;
+}
+(Deste modo não é necessário passar que a quantidade vale 0, pois o this() já faz referêmcia ao construtor que já faz isso).
+public Produto(string Nome, double Preco, int Quantidade) : this (Nome,Preco){
+this.Quantidade = Quantidade;
+}
+(E aqui é referenciado o construtor de dois argumentos colocando os argumentos que foram usados no construtor anterior).
+.Passar o próprio objeto como argumento na chamada de um método ou construtor (mais pra frente no curso vai ser ensinado);

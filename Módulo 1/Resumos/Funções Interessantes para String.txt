@@ -1,0 +1,72 @@
+FUNÇÕES INTERESSANTES PARA STRINGS
+⁃ Formatar:
+• ToUpper(): tudo para maiúsculo 
+• ToLower(): tudo para minúsculo 
+• Trim():
+Exemplo:
+string original = “ maria ”;
+string s1 = original.Trim();
+Console.WL(s1);
+(Apaga os espaços em branco tanto depois quanto na frente do string)
+Tela: 
+maria
+
+⁃ Buscar:
+• IndexOf: buscar a primeira ocorrência. 
+• LastIndexOf: buscar a última ocorrência. 
+Exemplo:
+string original = “abcde FGHIJ ABC abc DEFG”;
+int n1 = original.IndexOf(“bc”);
+int n2 = original.LastIndexOf(“bc”);
+Tela:
+1 (primeira ocorrência do “bc”)
+17 (última ocorrência do “bc”)
+
+⁃ Recortar:
+• Substring(início):
+• Substring(início, tamanho):
+Exemplo:
+string original = “abcde FGHIJ ABC abc DEFG”;
+string s1 = original.Substring(3);
+Console.WriteLine(s1);
+string s2 = original.Substring(3,5);
+Console.WriteLine(s2);
+
+Tela:
+de FGHIJ ABC abc DEFG”; (cortou as 3 primeiras posições)
+de FG (imprimiu a partir da 3 posição 5 carácteres)
+
+⁃ Substituir:
+• Replace(char que você quer substituir, char que você quer colocar no lugar)
+•Replace(string que você quer substituir, string que você quer colocar no lugar)
+Exemplo:
+string original = “abcde FGHIJ ABC abc DEFG”;
+string s1 = original.Replace(‘a’, ‘g’);
+Console.WriteLine(s1); 
+string s2 = original.Replace(“ab”,  “gh”);
+Console.WriteLine(s2);
+Tela:
+gbcde FGHIJ ABC gbc DEFG
+ghcde FGHIJ ABC ghc DEFG
+⁃Verificar se está vazio:
+•nomeDaVariavel.IsNullOrEmpty(nomeDaVariavel)
+•nomeDaVariavel.IsNullOrWhiteSpace(nomeDaVariavel)
+Exemplo:
+string original = “abcde FGHIJ ABC abc DEFG”;
+bool b1 = original. IsNullOrWhiteSpace(‘a’, ‘g’);
+Console.WriteLine(s1); 
+bool b2 = original.Replace(“ab”,  “gh”);
+Console.WriteLine(s2);
+Tela:
+false (a string não é nula ou vazia)
+false (a string não é nula ou espaço em branco)
+
+⁃ Recortar:
+• nomeDaVariavel.Split();
+Exemplo:
+string data = “20/09/2004”;
+string s1 = data.Split(“/“);
+Console.WriteLine(s1);
+Tela:
+20092004
+

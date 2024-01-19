@@ -1,0 +1,11 @@
+FOREACH
+- Sintaxe opcional e simplificada para percorrer coleções.
+- Leitura: "para cada objeto 'obj' contido em vect faça:
+string [] vect = new string[] {"Maria", "José", "Bob"}
+foreach(string obj in vect){
+	Console.WL(obj);
+}
+- Tela:
+Maria
+José
+Bob

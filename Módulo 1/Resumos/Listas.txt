@@ -1,0 +1,30 @@
+LISTAS
+- É uma estrutura de dados homogênea, ordenada, inicia vazia (seus elementos são alocados sob memória)
+- Cada elemento ocupa um nó da lista (Contém o valor e uma referência para os seus nodos relacionados).
+- Classe: List. 
+- Usa o Sistem.Collections.Generic;
+- Vantagens: tamanho variável e facilidade para se realizar inserções e deleções.
+- Desvantagens: Acesso sequencial aos elementos(percorrer todos os elementos até o que você quer trabalhar).
+- Sintexe:
+List<tipo> nome = new List<tipo>();
+List<int> num = new List<int> {1,2,3}
+- Inserir elementos na lista:
+• nomeDaLista.Add(elemento do tipo da lista).
+• nomeDaLista.Insert(índice que você quer inserir, elemento do mesmo tipo da lista).
+- Identificar o tamanho da lista:
+• nomeDaLista.Count;
+- Deletar elementos da lista:
+• nomeDaLista.Remove(item que voc;ê quer remover);
+• nomeDaLista.RemoveAll(x => x[0] == 'M'); tem como parâmetro predicado.
+• nomeDaLista.RemoveAt(posição do elemento que você quer remover);
+• nomeDaLista(posição que você quer começar a remover, número de posições após a posição inicial que vc quer remover). (remove tantas posições depois do indice relatado).
+- Filtrar com base em um predicado(criar uma nova lista com elementos que sastifação o predicado):
+1- Declara uma nova lista:
+List<string> nomeDaCopiaDaLista = nomeListOriginal.FindAll(x => x.Length == 5);
+- Encontrar a primeira ou última posição que satisfaça um predicado:
+• int posicao1 = nomeDaLista.FindIndex(x => x[0] == 'A';
+•  int posicao2 = nomeDaLista.FindLastIndex(x => x[0] == 'A';
+- Encontrar o primeiro ou ultimo elementos da lista que satisfaça um predicado:
+• string s1 = nomeDalista.Find(recebe uma função que faz o teste ou objeto => objeto[0] == 'A')
+• nomeDalista.FindLast(recebe uma função que faz o teste ou objeto => objeto[0] == 'A')
+

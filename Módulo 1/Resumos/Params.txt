@@ -1,0 +1,14 @@
+PARAMS
+- Serve para colocar indefinidos valores como parâmetro.
+EXEMPLO:
+. Na classe:
+public static int Soma(params int [] numbers){
+	for(int i = 0; i < numbers.Length; i++){
+		soma += numbers[i];
+	}
+}
+. No main:
+int s1 = Calculadora.Soma(2,3);
+int s2 = Calculadora.Soma(2,3,4,5,6);
+
+- Agora é possível colocar diversos números como parâmetro para realizar o método.

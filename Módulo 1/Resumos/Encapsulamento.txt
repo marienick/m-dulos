@@ -1,0 +1,26 @@
+ENCAPSULAMENTO
+-É um princípio que consiste em esconder detalhes de implementação de um componente, expondo apenas operações seguras e que o mantenha em um estado consistente.
+-Regra de Ouro: o objeto deve sempre estar em um estado consistente, e a própria classe deve garantir isso.
+
+-OPÇÃO 1: IMPLEMENTAÇÃO MANUAL
+.Todo atributo é private.
+(Ele é privativo da classe e não vai ter mais acesso de outro arquivo).
+.Implementa-se métodos Get e Set para cada atributo, conforme regras de negócio.
+(Como ele é privado ele necessita de um método para obtê-lo e defini-lo caso necessário).
+.Não é usual na plataforma C#.
+(Por que o C# tem o conceito de properties).
+
+EXEMPLO:
+class Produto{
+public string Nome;
+public double Preco;
+public int Quantidade;
+}
+-Deste modo o programador pode alterar qualquer um destes atributos no Main e fazer coisas que seriam prejudiciais ao projeto, caso ele fosse real. Para melhorar isso é necessário que haja a troca da palavra public para private nos atributos que necessitam de uma segurança.
+class Produto{
+private string Nome;
+private double Preco;
+private int Quantidade;
+}
+-Assim os Atributos não podem ser acessados sem que se use um atrinuto.
+-Quanddo os nomes são privados é mais adequado que o nome dele comece com um _ (underline) e que comece com letra minúscula.

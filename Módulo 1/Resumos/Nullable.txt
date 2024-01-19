@@ -1,0 +1,85 @@
+NULLABLE
+- É um recurso de C# para que dados de tipo valor (structs) possam receber o valor null.
+(structs não podem receber valores nulos, porém há excessões)
+- Uso comum:
+. Campos de banco de dados que podem valer nulo (data de nascimento, algum valor numérico, etc).
+. Dados e parâmetros opcionais.
+
+EXEMPLO:
+class Program{
+static void Main(string [] args){
+ double ? x = null;
+(se estivesse sem esse x não seria possível fazer essa declaração pois double não pode receber null, mas ai com esse ponto essa operação é possível)
+}
+
+OPERAÇÕES BÁSICAS NO NULLABLE
+Métodos:
+- GetValueOrDefault(): Pega o valor da varíavel ou pega o valor padrão se essa varível não tiver um padrão.
+- HasValue: vai dizer se dentro da variável existe valor (true or false).
+- Value: pega o valor diretamente da variável, ela dá erro se você chamar uma variável nullable com o valor null.
+class Program{
+static void Main(string [] args){
+ double ? x = null;
+ double ? y = 10.0;
+
+Console.WL(x.GetValueOrDefault());
+Console.WL(y.GetValueOrDefault());
+
+Console.WL(x.HasValue());
+Console.WL(y.HasValue());
+
+Console.WL(x.Value);
+Console.WL(y.Value);
+	}
+}
+TELA:
+0
+10.0
+false
+true
+erro
+
+-Para resolver é só colocar uma condição:
+if(x.HasValue){
+	Console.WL(x.Value);
+}
+else{
+	Console.WL("x is null");
+	Console.WL(y.Value);
+}
+if(y.HasValue){
+	Console.WL(y.Value);
+}
+else{
+	Console.WL("y is null");
+	Console.WL(x.Value);
+}
+tela:
+0
+10.0
+false
+true
+x is null
+10.0
+
+OPERADOR DE COALESCÊNCIA NULA (??):
+double? x = null;
+double y = x ?? 0.0;
+- Se o valor de x não for nulo ele joga o valor do x pro y, caso ele seja nulo y vai valer 0.00.
+
+EXEMPLO:
+class Program{
+static void Main(string [] args){
+ double ? x = null;
+ double ? y = 10.0;
+
+ double a = x ?? 5;
+ double b = y ?? 5;
+
+ Console.WL(a);
+ Console.WL(b);
+}
+TELA:
+5
+10
+

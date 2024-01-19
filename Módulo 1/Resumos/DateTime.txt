@@ -1,0 +1,39 @@
+DATE TIME:
+⁃ Serve para guardar uma data ou uma data e horário 
+⁃ Representa um instante.
+⁃ É um valor de tipo struct/ tipo valor
+⁃ Agenda:
+• Representação interna. 
+1. Um objeto DateTime internamente armazena: o número de ticks (100 nano segundos) desde a meia noite do dia 1 de janeiro do ano 1 da era comum).
+Exemplo:
+DateTime d1 = DataTime.Now;
+Console.WriteLine(d1);
+Console.WriteLine(d1.Ticks);
+Tela:
+13/01/2024 08:18:23 (imprimi o horário atual do sistema)
+1252526363636 (quantidade de ticks que passou desde o  dia 1 de janeiro do ano 1 da era atual até esse horário atual)
+• Instanciação: construtores, builders/ conversão String -> DateTime
+me
+1. Construtores:
+⁃ DateTime(ano, mes, dia) 
+⁃ DateTime(ano, mes, dia, hora,minuto,segundo) 
+⁃ DateTime(ano, mes, dia, hora,minuto,segundo, milissegundo)
+Exemplos:
+. DateTime d1 =  new DateTime(2024, 01, 13)
+. DateTime d2 =  new DateTime(2024, 01, 13, 20, 45, 03)
+. DateTime d3 =  new DateTime(2024, 01, 13, 20, 45, 03,500) (aqui com a formatação normal não se imprimi os milissegundos caso coloque essa data no CWL).
+(Nesses exemplos foram  instanciadas todas essas datas e elas foram armazenados dentro de variáveis)
+
+2. Builders:
+⁃ DateTime.Now (imprimi a data de agora)
+⁃ DateTime.Today (imprimi a data de hoje no horário das 00:00 horas)
+⁃ DateTime.UctNow (imprimi o horário de agora só que no Horário do Meridiano de Greenwich/ horário universal)
+• Formatação: DateTime -> String
+1.DateTime.ParseExact(string,string)
+• Você determina o formato da sua data e não utilizar o formato predeterminado 
+• Exemplo:
+DateTime.ParseExact(“20/09/2004 13:05:45” , ”dd/MM/yyyy HH:mm:ss”)
+2. DateTime.Parse(Uma data para ela ser convertida de string para DateTime) 
+• Pode ser separado por “-“, “/“ (data) no horário é separado com “:” . Pode ser escrito tanto na escrita de dia do Brasil (dia/mes/ano) quanto an escrita estadunidense (mes/dia/ano).
+
+

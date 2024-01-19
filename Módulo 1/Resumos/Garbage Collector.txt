@@ -1,0 +1,13 @@
+GARBAGE COLLECTOR:
+-É um processo que automatiza o gerenciamento de memória de um programa de execução.
+-O garbage collector monitora os objetos alocados dinamicamenre pelo programa (no heap), desalocando aqueles que não estão mais sendo utilizados.
+
+DESALOCAÇÕES POR GARBAGE COLLECTOR
+Quando um objeto vira referência de outro objeto as informações daquele objeto vão ser desalocados.
+
+DESALOCAÇÃO POR ESCOPO
+em um método você tem a variável x = 10, quando passa por uma execução entrar no if é criado uma variável que só existe enquando estivermos dentro do escopo dessa condição.
+
+RESUMO:
+-Objetos alocados dinamicamente, queando não possuem mais referência para eles, serão desalocados pelo garbage collector.
+-Variáveis locais são desalocadas imediatamente assim que seu escopo local sai de execução.

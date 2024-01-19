@@ -1,0 +1,14 @@
+CONSTRUTOR
+-É uma operação especial da classe que executa no momento da instanciação do objeto, ou seja quando se dar o comando new ele executa.
+-Usos comuns do construtor:
+.Iniciar valores dos atributos.
+.Permitir ou obrigar que o objeto receba dados/dependências mo momento de sua instanciação.
+-Se um construtor customizado não for  especificado a classe disponibiliza um construtor padrão, ex Produto p = new Produto(), não recebe nada entre os parênteses.
+Exemplo de Construtor (vem depois dos atributos):
+Classe Produto:
+Construtor:
+public Produto(string Nome, double Preco, int Quantidade){
+this.Nome = Nome;
+this.Preco = Preco;
+this.Quantidade = Quantidade
+}

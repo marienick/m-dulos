@@ -1,0 +1,6 @@
+Ordem sugerida:
+1- Atributos privados;
+2- Propriedades autoimplementadas/ Atributos publicos;
+3- Construtores;
+4- Propriedades Customizadas/ Properties para os atributos com condições;
+5- Outros métodos da classe + ToString;

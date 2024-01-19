@@ -1,0 +1,19 @@
+PROPERTIES:
+-São definições de métodos encapsulados, porém expondo uma sintaxe similar à de atributos e não de métodos.
+- Uma propriedade é um membro que oferece um mecanismo flexível para ler, gravar ou calcular o valor de um campo particular. As propriedades podem ser usadas como se fossem atributos públicos, mas na verdade elas são métodos especiais chamados "acessadores". Isso permite que os dados sejam acessados facilmente e ainda ajuda a promover a segurança e a flexibilidade dos métodos
+EXEMPLO:
+class Produto{
+private string _nome;
+private double _preco;
+private int _quantidade;
+
+public string Nome{
+get {return _nome}
+set {
+	if(value != null){
+		_nome = value;
+	}
+
+}
+}
+-Assim você pode acessar no main com p.Nome = "tv 4k";

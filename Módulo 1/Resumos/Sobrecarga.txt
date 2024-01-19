@@ -1,0 +1,8 @@
+SOBRECARGA:
+-É um recurso que uma classe possui de oferecer mais de uma operação com o mesmo nome, porém com diferentes listas de parâmetros, ou seja você pode fazer mais de uma versão de métodos apenas com mais parâmetros. EXEMPLO:
+public Produto(string Nome, double Preco){
+this.Nome = Nome;
+this.Preco = Preco;
+this.Quantidade = 0;
+}
+(Ai no programa teria esses dois métodos, um com 3 argumentos e outro com 2 argumentos)

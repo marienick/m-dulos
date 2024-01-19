@@ -1,0 +1,75 @@
+PROPRIEDADES
+- Date (DateTime);
+- Day (int);
+- DayOfWeek (DayOfWeek);
+- DayOfYear (int);
+- Hour (int);
+- Kind (DateTimeKind);
+- Milisecond (int);
+- Month (int);
+- Second (int);
+- Ticks (long);
+- TimesOfDay(TimeSpan);
+- Year (int);
+
+EXEMPLO:
+DateTime d = new DateTime(2001, 8, 15, 13, 45, 58, 275);
+Console.WriteLine(d);
+Console.WriteLine(d.Date);
+Console.WriteLine(d.Day);
+(Se você constinuar colocando as propriedades ele vai falando a propriedade que vc colocar);
+
+TELA:
+15/08/2001 13:45:58
+15/08/2001 00:00:00
+15
+
+FORMATAÇÃO
+- Há várias funções de formatação.
+EXEMPLO:
+Console.WriteLine(d.ToLongDateString());
+Console.WriteLine(d.ToLongTimeString());
+Console.WriteLine(d.ToShortDateString());
+Console.WriteLine(d.ToShortTimeString());
+Console.WriteLine(d.ToString());
+Console.WriteLine(d.ToString("yyy-MM-dd HH:mm:ss"));
+Console.WriteLine(d.ToString("yyy-MM-dd HH:mm:ss.fff"));
+
+
+TELA:
+quarta-feira, 15 de agosto de 2001
+13:45:58
+15/08/2001
+13:45
+15/08/2001 13:45:58
+2001-08-15 13:45:58
+2001-08-15 13:45:58:275
+
+OPERAÇÕES COM DATETIME
+DateTime x = ...
+DateTime y = x.Add(timeSpan);
+DateTime y = x.AddDays(double);
+DateTime y = x.AddHours(double);
+DateTime y = x.AddMilliseconds(double);
+DateTime y = x.AddMinutes(double);
+DateTime y = x.AddMonths(int);
+DateTime y = x.AddSeconds(double);
+DateTime y = x.AddTicks(long);
+DateTime y = x.AddYears(int);
+
+DateTime y = x.Substract(timeSpan);
+TimeSpan y = x.Substract(DateTime);
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+

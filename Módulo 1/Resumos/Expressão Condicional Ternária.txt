@@ -1,0 +1,9 @@
+EXPRESSÃO CONDICIONAL TERNÁRIA
+⁃ Estrutura opcional a vários if-else que se deseja decidir um valor com base em uma condição. 
+⁃ Sintaxe:
+(Condição) ? valorSeVerdadeiro : valorSeFalso
+⁃ EXEMPLO:
+. (2 > 4) ? 50 : 80  Resultado => 80
+. (10 != 3) ? “Maria” : “João”   Resultado => “Maria”
+. double preco = 10.0;
+ double desconto = (preco < 20) ? preco * 0,1 : preco * 0,05;

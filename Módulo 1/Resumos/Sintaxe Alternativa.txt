@@ -1,0 +1,8 @@
+SINTAXE ALTERNATIVA PARA INICIAR VALORES DE UM OBJETO:
+-No corpo do main você digita:
+Produto p = new Produto{
+this.Nome = Nome;
+this.Preco = Preco;
+this.Quantidade = Quantidade
+}
+(Não precisaria de na classe ter Construrores na classe)

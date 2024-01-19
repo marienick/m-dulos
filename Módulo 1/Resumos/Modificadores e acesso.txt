@@ -1,0 +1,16 @@
+MODIFICADORES DE ACESSO PARA MEMBROS DE UMA CLASSE:
+-public: tem acesso dentro da  própria classe, nas subclasses no assembly, nas classes do assembly, nas subclasses fora do assembly, classes fora do assembly.
+-protected internal: tem acesso dentro da  própria classe, nas subclasses no assembly, nas classes do assembly, nas subclasses fora do assembly.
+- internal: tem acesso dentro da  própria classe, nas subclasses no assembly, nas classes do assembly.
+-protected:tem acesso dentro da própria classe, nas subclasses no assembly, nas subclasses fora do assembly.
+-private protected: tem acesso dentro da própria classe, nas subclasses no assembly.
+-private: tem acesso dentro da própria classe
+
+MODIFICADORES DE ACESSO PARA  UMA CLASSE:
+-Acesso por qualquer classe: public class Product
+-Acesso somente dentro do assembly: 
+. internal class Product
+. class Product
+-Acesso somente pela classe-mãe:
+. private class Product
+. Nota: classe aninhada (uma classe dentro de uma classe), por padrão, é private.

@@ -1,0 +1,9 @@
+BOXING 
+- É o processo de conversão de um objeto tipo valor para um objeto tipo referência compatível.
+EXEMPLO:
+int x = 20;
+Object obj = x; (tipo referência)
+(variavel obj vai ser uma referencia e é compatível com o número inteiro.)
+int y = (int) obj;
+UNBOXING
+- É o processo inverso do boxing.

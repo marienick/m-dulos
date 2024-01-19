@@ -1,0 +1,7 @@
+-CONVERSÃO IMPÍCITA: quando se converte uma varíavel de um tipo para outro, sendo que o primeriro que vai ser convertido tem que ter menos bytes que o segundo, ex:
+float b = 5.1;
+double a = b;
+
+-CASTING/ CONVERSÃO EXPLÍCITA: você coloca o tipo da varíavel que você quer dentro de parênteses antes do valor,pois a quantidade de bytes é maior ou o tipo é diferente.Ex:
+double a = 5.1;
+float b = (float)a;
