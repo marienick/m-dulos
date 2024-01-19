@@ -25,3 +25,9 @@ code .
 git log
 . Listagem resumida:
 git log --oneline
+- git status
+Mostra oque foi alterado no seu projeto.
+- clear
+Limpa o terminal
+- git reset
+Volta todo mundo para o estado original, ele tira do stage
