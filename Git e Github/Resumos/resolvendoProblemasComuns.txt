@@ -1,0 +1,27 @@
+- Removendo arquivos na áreas de stage (onde coloca os arquivos para serem salvos):
+git status
+git reset
+- Desfazendo modificações não salvas( apaga tudo que você fez desde o último commit)
+git status
+git reset
+git clean -df
+git checkout -- .
+- Oque fazer quando abre o editor VIM:
+.. Você pode abri-lo apartir de:
+... Um commit sem mensagem.
+... Fazer um merge de 3 vias.
+. Para habilitar a edição do arquivo:
+i
+. Para sair do VIM salvando:
+apertar esc
+:wq
+aperta enter
+. Para sair do VIM sem salvar:
+apertar esc
+:q!
+aperta enter
+- Como desfazer o último commit:
+. Desfazer últmo commit sem desfazer as modificações nos arquivos
+. Desfazer o commit para modificar algo mas sem apagar tudo que você fez, ele desfaz o ultimo commit para que você não tenha que fazer um só para a informação esquecida.
+git status
+git reset --soft HEAD~1

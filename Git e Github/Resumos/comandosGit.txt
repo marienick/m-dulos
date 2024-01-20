@@ -22,12 +22,26 @@ cd "nomeDaPasta"
 - Abrir o vscode pelo termital do git bash:
 code .
 - Verificando o histórico de versões
-git log
+. git log
 . Listagem resumida:
-git log --oneline
+. git log --oneline
 - git status
-Mostra oque foi alterado no seu projeto.
+. Mostra oque foi alterado no seu projeto.
 - clear
-Limpa o terminal
+. Limpa o terminal
 - git reset
-Volta todo mundo para o estado original, ele tira do stage
+. Volta todo mundo para o estado original, ele tira do stage
+- git diff:
+. Comando que mostra a diferença entre arquivos modificados, porém o vscode já mostra graficamente as diferenças.
+- git checkout:
+. Permite modificar temporariamente os arquivos do projeto ao estado de um dado commit ou branch.
+. Código do commit, HEAD (último commit):
+.. Cada commit possui um código, que pode ser utilizado para referenciar o commit.
+.. O último commit do histórico do branch corrente também pode ser referenciado pela palavra HEAD.
+.. É possível referenciar um commit N versões antes de HEAD usando ~N, por exemplo:
+... HEAD~1(penúltimo commit)
+... HEAD~2(antepenúltimo commit)
+. IMPORTANTE: Antes de fazer o checkout para voltar para o HEAD, certifique-se que não haja mudanças nos arquivos.Se você acidentalmente mudou alguma coisa, desfaça as modificações usando:
+git reset
+git clean -df
+git checkout -- .
