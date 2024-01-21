@@ -45,6 +45,24 @@ code .
 git reset
 git clean -df
 git checkout -- .
+- Oque fazer quando abre o editor VIM:
+. Estas ações podem abrir o editor VIM no terminal:
+.. Fazer commit sem mensagem.
+.. Fazer um merge de três vias.
+. Habilitar modo edição:
+i
+. Sair do VIM, salvando as alterações:
+<Esc>
+:wq
+<Enter>
+. Sair do VIM, descartando as alterações:
+<Esc>
+:q!
+<Enter>
+- Como desfazer o último commit sem desfazer as modificações nos arquivos:
+git status
+git reset --soft HEAD~1
+(Assim é possível que você apague o ultimo commit para que você adicione algo que você esqueceu. Fazendo que não seja necessário você fazer um commit só para informação esquecida)
 - Como deletar commits e também as modificações dos arquivos:
 . Voltar o projeto ao estado de um dado commit (deletar commits e alterações posteriores desse commit):
 git status 
@@ -54,5 +72,22 @@ git pull origin main
 . Voltar o projeto ao estado do penúltimo commit:
 git status
 git reset --hard HEAD~1
-
 ATENÇÃO: Ação destrutiva!!!
+- Como atualizar o repositório local em relação ao remoto:
+git status
+git pull <nome do remote> <nome do branch>
+* nome do remote = origin
+* nome do branch = main 
+- Como resolver push rejeitado:
+. Não é permitido enviar um push se seu repositório local está atrasado em relação ao histórico do repositório remoto!
+. Exemplo:
+.. Quando você não tem todos os arquivos que estão no repositório remoto.
+git pull origin main
+(vai abrir o VIM)
+i
+(coloca a mensagem do commit atrasado)
+(aperta esc)
+:wq
+(aperta Enter)
+- Resolvendo Conflito:
+. Ocorre um conflito quando você vai mesclar 2 históricos e esses históricos diferentes alteraram no mesmo arquivo.
