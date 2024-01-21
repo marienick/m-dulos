@@ -45,3 +45,14 @@ code .
 git reset
 git clean -df
 git checkout -- .
+- Como deletar commits e também as modificações dos arquivos:
+. Voltar o projeto ao estado de um dado commit (deletar commits e alterações posteriores desse commit):
+git status 
+git reset --hard <código do commit>
+.. Recuperar oque já estava no repositório remoto:
+git pull origin main
+. Voltar o projeto ao estado do penúltimo commit:
+git status
+git reset --hard HEAD~1
+
+ATENÇÃO: Ação destrutiva!!!
