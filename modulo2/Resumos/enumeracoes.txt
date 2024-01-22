@@ -1,0 +1,22 @@
+- Definição:
+. É um tipo especial que serve para especificar de forma literal um conjunto de constantes refalionadas.
+. Palavra chave em C#: enum 
+.. Nota: enum é um tipo valor, não é um tipo referência.
+. Vantagem: melhor semântica, código mais legível e auxiliado pelo compilador( ele não vai deixar você colocar um valor fora dos valores enumerados que você definiu previamente).
+- Exemplos: 
+. Ciclo de vida/ Estados de um pedido:
+class Order{
+    public int Id {get; set;}
+    public DateTime Moment {get; set;}
+    public OrderStatus Status {get; set;}
+}
+enum OrdeStatus: int {
+    PendingPayment = 0,
+    Processing = 1,
+    Shipped = 2,
+    Delivered = 3
+}
+
+- Conversão de string para enumerado:
+
+- Representação UML:
