@@ -91,3 +91,13 @@ i
 (aperta Enter)
 - Resolvendo Conflito:
 . Ocorre um conflito quando você vai mesclar 2 históricos e esses históricos diferentes alteraram no mesmo arquivo.
+.. Analiza o código fonte.
+.. Faça as edições necessárias.
+.. Faça um novo commit.
+- Como sobrescrever um histórico no Github:
+ATENÇÃO: Ação destrutiva!!
+git push -f origin main
+(ignora o mudança que não está salva na máquina e força que sua mudança prevaleça.)
+- Como apontar o projeto para outro repositório remoto:
+. 
+git remote set-url origin git@github.com:seuusuario/seurepositorio.git
