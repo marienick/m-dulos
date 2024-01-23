@@ -1,0 +1,10 @@
+GIT
+- Sistema de versionamento para controlar versões (chamadas  de "commits") de algum projeto ou trabalho, que você instala no computador.
+
+GITHUB
+- É um serviço online de hospedagem de projetos gerenciados pelo Git.
+
+REPOSITÓRIO REMOTO E LOCAL
+- Um projeto controlado pelo Git é chamado de repositório de versionamento.
+- Tipicamente uma cópia "oficial" do repositório fica salvo em um servidor (repositório remoto).
+- Cada pessoa que trabalha no projeto pode fazer uma cópia do repositório para seu computador (repositório Local). A pessoa então faz suas alterações no projeto (novos commits) e  depois salva as alterações no servidor.

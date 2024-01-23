@@ -1,0 +1,8 @@
+Membros Estáticos / Membros de Classe:
+-São membros que fazem sentido independente de objetos. Não precisam de objeto para serem chamados. São chamados a partir do próprio nome da classe.
+-Aplicações comuns:
+.Classes Utilitárias: classes que fornecem operações simples que podem ser chamadas de forma isolada, ex: Math.Sqrt(double). 
+**(Math é a classe e o método não precisa ser instanciado com um objeto, somente com o nome da classe)
+.Declaração de constantes:
+-Uma classe que só possui membros estáticos, pode ser uma classe estática também.Essa classe não pode ser instanciada.
+-Os demais itens que não são estáticos são itens de instância.

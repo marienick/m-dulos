@@ -16,7 +16,16 @@ enum OrdeStatus: int {
     Shipped = 2,
     Delivered = 3
 }
-
+- Conversão de enumerado para string:
+. Basta adicionar o ToString() no final do enumerado.
+. Exemplo:
+string txt = OrderStatus.PendingPayment.ToString();
 - Conversão de string para enumerado:
-
-- Representação UML:
+. Utiliza o Enums.Parse<Nome do Enums>("string que tem que ter no enumerado");
+. Exemplo:
+OrderStatus os = Enum.Parse<OrderStatus>("Delivered");
+Ou
+OrderStatus os = (OrderStatus)Enum.Parse(typeof(OrderStatus), "Delivered");
+Ou 
+OrderStatus os;
+Enum.TryParse("Delivered", out os);

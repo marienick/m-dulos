@@ -1,0 +1,48 @@
+PROPRIEDADES DO TIMESPAN
+TimeSpan t1 = TimeSpan.MaxValue;
+TimeSpan t2 = TimeSpan.MinValue;
+TimeSpan t3 = TimeSpan.Zero;
+Console.WriteLine(t1);
+Console.WriteLine(t2);
+Console.WriteLine(t3);
+TimeSpan t = new TimeSpan(2, 3, 5, 7, 11);
+Console.WriteLine(t);
+Console.WriteLine(t.Days);
+Console.WriteLine(t.Hours);
+Console.WriteLine(t.Minutes);
+(Devolve número inteiro)
+Console.WriteLine(t.TotalDays);
+Console.WriteLine(t.TotalHours);
+Console.WriteLine(t.TotalMinutes);
+(Devolve a fração em Dias,Horas, Minutos)
+
+TELA:
+"Valor máximo de um TimeSpan"
+"Valor mínimo de um TimeSpan"
+00:00:00
+2.03:05:07.011000
+2
+3
+5
+2,128... (fala o total de dias contando com as dias das horas minutos, etc
+51,08... (fala o total de horas contando com as horas dos dias minutos, etc)
+3065,116... (fala o total de minutos contando com os minutos dos dias, horas, etc)
+
+
+
+OPERAÇÕES COM TIMESPAN
+TimeSpan t1 = new TimeSpan(1, 30, 10);
+TimeSpan t2 = new TimeSpan(0, 10 5);
+Console.WriteLine(t1.Add(t2));
+Console.WriteLine(t1.Substract(t2));
+Console.WriteLine(t2.Multiply(2.0));
+Console.WriteLine(t2.Divide(2.0));
+
+TELA:
+01:40:15
+01:20:05
+00:20:10
+00:05:02.5000000
+
+
+

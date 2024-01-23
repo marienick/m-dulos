@@ -1,0 +1,8 @@
+- Categoria de classes:
+. Em um sistema orientado a objetos, de modo geral tudo é objeto.
+. Por questões de desing tais como organização, flexibilidade, reuso, delegação, etc., há várias categorias de classes:
+.. Entities: Classes como Produtos, Clientes, Pedidos, etc. (Vamos focar mais nesse, nesse capítulo)
+.. Views: Telas do sistema.
+.. Controllers: Faz o meio de campo entre a tela e o sistema.
+.. Repositories: Acessam dados de um banco de dados e repositório de dados.
+.. Services: 
