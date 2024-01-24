@@ -79,13 +79,12 @@ namespace ConsoleApp226
                 HourContract contract = new HourContract(date, valuePerHour, hours);
                 worker.Contracts.Add(contract);
             }
-            Console.WriteLine("Enter with month and year to caculate the income:\n(MM/YYYY)")
+            Console.WriteLine("Enter with month and year to caculate the income:\n(MM/YYYY)");
             string monthAndYear = Console.ReadLine();
             int month = int.Parse(monthAndYear.Substring(0, 2));
-            int year = int.Parse(monthAndYear.Substring](3, 4));
+            int year = int.Parse(monthAndYear.Substring(3, 4));
             Console.WriteLine(worker);
-            Console.WriteLine($"Income for {monthAndYear}: " + worker.Income(year,month))
+            Console.WriteLine($"Income for {monthAndYear}: " + worker.Income(year,month));
         }
     }
-}
 }
