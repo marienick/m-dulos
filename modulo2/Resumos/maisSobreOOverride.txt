@@ -1,0 +1,18 @@
+Montagem de um override string de uma forma mais fácil e eficiente:
+usa o nameSpace "System.Text;"
+public override string ToString(){
+    StringBuilder sb = new StringBuilder();
+    sb.AppendLine(Title);
+    sb.Append(Likes);
+    sb.Append(" Likes: ");
+    sb.AppendLine(Moment.ToString("dd/MM/yyyy HH:mm:ss));
+    sb.AppendLine(Content);
+    sb.AppendLine("Comments: ");
+    foreach(Comment c in Comments){
+        sb.AppendLine(c.Text);
+    }
+    return sb.ToString();
+}
+Métodos do string builder:
+- sb.Append (Adiciona um texto no final do string builder);
+- sb.AppendLine (Adiciona um texto no final do string builder e quebra a linha);
