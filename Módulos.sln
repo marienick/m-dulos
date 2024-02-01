@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modulo2", "modulo2", "{DF5F3DAD-9907-4FA2-9CAA-433B51BEED67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicios", "Exercicios", "{7444BB24-54B1-4482-A3EC-0CFACCF696FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp230", "modulo2\Exercicios\ConsoleApp230\ConsoleApp230.csproj", "{FA221CF6-2582-4623-9702-94246E83BBDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA221CF6-2582-4623-9702-94246E83BBDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA221CF6-2582-4623-9702-94246E83BBDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA221CF6-2582-4623-9702-94246E83BBDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA221CF6-2582-4623-9702-94246E83BBDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7444BB24-54B1-4482-A3EC-0CFACCF696FA} = {DF5F3DAD-9907-4FA2-9CAA-433B51BEED67}
+		{FA221CF6-2582-4623-9702-94246E83BBDF} = {7444BB24-54B1-4482-A3EC-0CFACCF696FA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5537E68A-A8FF-4931-8D32-603A7F915F71}
+	EndGlobalSection
+EndGlobal

@@ -1,1 +1,38 @@
 Herança:
+- É um tipo de associação que permite que uma classe herde dados e comportamentos de outra.
+- Definições importantes:
+. Relação "é um" (uma classe é a outra só que com algo mais)
+. Generalização/ especialização (Uma classe é uma conta geral e a outra que é herança dela é só uma especialização da geral)
+. Superclasse (classe base/classe genérica)/ subclasse (classe derivada/ classe especializada) 
+. Extenção: a classe derivada extende a classe base, por que ela tem tudo que ela tem e mais outras coisas.
+. Herança é uma associação entre classes e não entre objetos.
+- Vantagens:
+. Reuso.
+. Polimorfismo.
+- Sintaxe:
+. ':' (estende).
+. base (referência para a superclasse).
+- Exemplo:
+. Suponha um negócio de bandco que possui uma conta comum e uma conta para empresas, sendo que a conta para empresa possui todos membros da conta comum, mais um limite de empréstimo e uma operação de realizar empréstimo.
+Classe
+.. Account
+ Atributos
+... numer
+... holder
+... balance
+ Métodos
+... withdraw
+... deposit
+Subclasse
+.. BusinessAcount 
+ Atributos
+... numer
+... holder
+... balance
+... loanLimit 
+ Métodos
+... withdraw
+... deposit
+... loan(empréstimo)
+
+- A herança permite o reuso de atributos e métodos (dados e comportamento), assim não é necessário criar duas classes para as contas.
