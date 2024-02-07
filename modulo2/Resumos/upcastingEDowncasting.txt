@@ -1,7 +1,7 @@
 - Upcasting:
 . Casting da subclasse para superclasse (Convertendo um objeto da classe Business Acount para uma variável do tipo Account)
 . Uso comun: polimorfismo;
-- Downcasting:
+- Downcasting: operação insegura.
 . Casting da superclasse para subclasse (Converter um Account para um Business Acount);
 . Palavra as;
 . Palavra is;
