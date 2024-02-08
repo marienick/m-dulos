@@ -21,7 +21,7 @@ namespace ConsoleApp233.Entities
         }
         public void Widthdraw(double amount)
         {
-            Balance -= amount;
+            Balance -= amount + 5.0;
         }
         public void Deposit(double amount)
         {

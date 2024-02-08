@@ -5,4 +5,9 @@
 . Casting da superclasse para subclasse (Converter um Account para um Business Acount);
 . Palavra as;
 . Palavra is;
+.. Pode ser usado numa condição para ver se uma variável é de um tipo.
+.. Exemplo:
+Account acc3 = new SavingsAccount(1004, "Ana", 0.0, 0.1);
+if(acc3 is  BusinessAccount){}
+if(acc3 is SavingsAccount){}
 . Uso comum: métodos que recebem parâmetros genéricos (Ex: Equals);

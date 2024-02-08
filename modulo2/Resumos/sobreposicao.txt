@@ -1,0 +1,6 @@
+SOBREPOSIÇÃO OU SOBRESCRITA:
+- É a implementação de um método de uma superclasse na subclasse.
+- Para que um método comum (não abstrato) possa ser sobreposto, deve ser incluído nele o prefixo "virtual".
+- Ao sobrescrever um método, devemos incluir nele o prefixo "override".
+. Para termos um método de uma subclasse diferente do método comum com a classe mãe, é necessário escrevr a palavra override no método, exemplo:
+public override void Withdraw(double amount){}
