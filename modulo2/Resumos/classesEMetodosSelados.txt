@@ -1,0 +1,20 @@
+CLASSES E MÉTODOS SELADOS:
+- Palavra chave: sealed.
+- Classe: evita que a classe seja herdada.
+. No entanto ainda é possível extender a funcionalidade de uma classe selada usando "extension methods".
+. Exemplo:
+namespace Course
+{
+    sealed class SavingsAccount
+    {
+
+    }
+}
+- Método: evita que um método sobreposto possa ser sobreposto novamente.
+. Só pode ser aplicado a métodos sobrepostos.
+
+POR QUÊ SE FAZ ISSO?
+- Segurança: dependendo das regras do negócio, às vezes é desejável garantir que uma classe não seja herdade, ou que um método não seja sobreposto.
+. Geralmente convém selar métodos sobrepostos, pois sobreposições múltiplas podem ser uma porta de entrada para inconcistências.
+- Performace: atributos de tipo de uma classe selada são analisados de forma mais rápida em tempo de execução.
+. Exemplo clássico: string.

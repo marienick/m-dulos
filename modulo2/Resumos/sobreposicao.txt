@@ -1,6 +1,32 @@
 SOBREPOSIÇÃO OU SOBRESCRITA:
 - É a implementação de um método de uma superclasse na subclasse.
 - Para que um método comum (não abstrato) possa ser sobreposto, deve ser incluído nele o prefixo "virtual".
-- Ao sobrescrever um método, devemos incluir nele o prefixo "override".
-. Para termos um método de uma subclasse diferente do método comum com a classe mãe, é necessário escrevr a palavra override no método, exemplo:
+- Ao sobrescrever um método, devemos incluir no método que está na classe mãe o prefixo "virtual" e no método que está na claase filho dele o prefixo "override".
+. Para termos um método de uma sobrescrito de uma superclasse basta escrever o prefixo "virtual" no método da classe generalizada, e o prefixo "override" no método da classe especializada, exemplo:
+.. Classe Account:
+public virtual void Withdraw(double amount){}
+.. Classe SavingsAccount:
 public override void Withdraw(double amount){}
+
+PALAVRA BASE:
+- É possível chamar a implementação da superclasse usando a palavra base, exemplo:
+. Suponha que a regra para a=saque para a conta poupança seja realizar o saque normalmente da superclasse (Account), e depois descontar mais 2.0:
+Função da superClasse:
+public virtual void Widthdraw(double amount)
+        {
+            Balance -= amount + 5.0;
+        }
+Função na subclasse:
+public override void  Withdraw(double amoun){
+    base.Withdraw(amount);
+    Balance -= 2.0;
+}
+.. Nessa função é realizado a função da superclasse retirando o valor do saque + 5 reais e também é realizado a função da subclasse que é subtraído -2,0.
+.. Então no final é subtraído do balance o (amount + 5,0 + 2,0)
+- Quando queremos reaproveitar os contrutores da superclasse num construtor da subclasse, exemplo:
+public BusinessAccount (int number, string holder, double balance, double loanLimit) : base (number, holder, balnce){
+    {
+        LoanLimit = loanLimit;
+    }
+}
+.. Desse jeito não é necessário escrever todo aquele método que já existe na superclasse, é preciso somente completá-lo.

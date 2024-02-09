@@ -1,0 +1,13 @@
+POLIMORFISMO:
+- Recurso que permite que variáveis de um mesmo tipo mais genéricos possam apontar para objetos de tipos específicos diferentes, tendo assim comportamentos diferentes conforme cada tipo específico.
+. Exemplo:
+Account acc1 = new Account(1001, "Alex", 500.0);
+Account acc2 = new SavingsAccount(1002, "Ana", 500.0,0.01);
+acc1.Widthdraw(10.0);
+acc2.Widthdraw(10.0);
+Console.WriteLine(acc1.Balance);
+Console.WriteLine(acc2.Balance);
+. Aqui temos duas variáveis diferentes, porém elas se comportam de jeitos diferentes mesmo tendo o mesmo tipo Account.
+IMPORTANTE ENTENDER:
+- A associação do tipo específico com o tipo genérico é feita em tempo de execução (upcasting).
+- O compilador não sabe para qual tipo específico a chamada do método Withdraw está sendo feita (ele só sabe que são duas variáveis tipo Account)

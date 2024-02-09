@@ -19,7 +19,8 @@ namespace ConsoleApp233.Entities
             Holder = holder;
             Balance = balance;
         }
-        public void Widthdraw(double amount)
+        // Método da superclasse que vai ser sobrescrito na subclasse utiliza o prefixo "virtual"
+        public virtual void Widthdraw(double amount)
         {
             Balance -= amount + 5.0;
         }
